@@ -9,10 +9,7 @@ class TagsController < ApplicationController
 
 	def destroy
 		@tag = Tag.find(params[:id])
-		@taggings = Tagging.where(tag_id: @tag.id)
-		@taggings.each do |tagging|
-			tagging.destroy
-		end
+		Tagging.where(tag_id: params[:id]).destroy_all
 		@tag.destroy
 
     flash.notice = "Tag '#{@tag.name}' Removed!"
