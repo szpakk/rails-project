@@ -1,2 +1,2 @@
 # Rails Project for The Odin Project
-# Blogger implementation - section 10-16 from http://tutorials.jumpstartlab.com/projects/blogger.html
+# Blogger implementation - section I0-I5 from http://tutorials.jumpstartlab.com/projects/blogger.html
